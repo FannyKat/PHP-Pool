@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<style>
+    td, th{
+        border: 1px solid black;
+        text-align: center;
+        position: relative;
+    }
+
+    body {
+        background-image: url("https://cdn.pixabay.com/photo/2018/07/15/10/44/dna-3539309_960_720.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    table {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        font-family: monospace;
+        font-style: bold;
+        text-align: center;
+    }
+
+    .alcalin {
+        background-color: rgb(226, 72, 72);
+    }
+
+    .alcalino-terreux {
+        background-color: rgb(231, 186, 127);
+    }
+
+    .transition-metal {
+        background-color: rgb(240, 80, 106);
+    }
+
+    .metalloid {
+        background-color: rgb(201, 201, 103);
+    }
+
+    .poor-metal {
+        background-color: rgb(172, 154, 154);
+    }
+
+    .non-metal {
+        background-color: rgb(133, 216, 133);
+    }
+
+    .halogen {
+        background-color: rgb(247, 247, 84);
+    }
+
+    .noble-gaz {
+        background-color: rgb(145, 145, 236);
+    }
+
+    .lanthanids {
+        background-color: rgb(220, 157, 236);
+    }
+
+    .actinids {
+        background-color: rgb(233, 108, 191);
+    }
+</style>
+<html>
+    <head><title>Mendeleiev</title>
+        <h1 class="title">Periodic Table of Elements</h1>
+    </head>
+    <body>
+            <table contenteditable="true">
+                <tr>
+                    <td class="non-metal">H</td>
+                    <td colspan=16 style="border:none"></td>
+                    <td class="noble-gaz">He</td>
+                </tr>
+
+                <tr>
+                    <td class="alcalin">Li</td>
+                    <td class="alcalino-terreux">Be</td>
+                    <td colspan=10 style="border:none"></td>
+                    <td class="metalloid">B</td>
+                    <td class="non-metal">C</td>
+                    <td class="non-metal">N</td>
+                    <td class="non-metal">O</td>
+                    <td class="halogen">F</td>
+                    <td class="noble-gaz">Ne</td>
+                </tr>
+
+                <tr>
+                    <td class="alcalin">Na</td>
+                    <td class="alcalino-terreux">Mg</td>
+                    <td colspan=10 style="border:none"></td>
+                    <td class="poor-metal">Al</td>
+                    <td class="metalloid">Si</td>
+                    <td class="non-metal">P</td>
+                    <td class="non-metal">S</td>
+                    <td class="halogen">Cl</td>
+                    <td class="noble-gaz">Ar</td>
+                </tr>
+
+                <tr>
+                    <td class="alcalin">K</td>
+                    <td class="alcalino-terreux">Ca</td>
+                    <td class="transition-metal">Sc</td>
+                    <td class="transition-metal">Ti</td>
+                    <td class="transition-metal">V</td>
+                    <td class="transition-metal">Cr</td>
+                    <td class="transition-metal">Mn</td>
+                    <td class="transition-metal">Fe</td>
+                    <td class="transition-metal">Co</td>
+                    <td class="transition-metal">Ni</td>
+                    <td class="transition-metal">Cu</td>
+                    <td class="transition-metal">Zn</td>
+                    <td class="poor-metal">Ga</td>
+                    <td class="metalloid">Ge</td>
+                    <td class="metalloid">As</td>
+                    <td class="non-metal">Se</td>
+                    <td class="halogen">Br</td>
+                    <td class="noble-gaz">Kr</td>
+                </tr>
+
+                <tr>
+                    <td class="alcalin">Rb</td>
+                    <td class="alcalino-terreux">Sr</td>
+                    <td class="alcalino-terreux">Y</td>
+                    <td class="transition-metal">Zr</td>
+                    <td class="transition-metal">Nb</td>
+                    <td class="transition-metal">Mo</td>
+                    <td class="transition-metal">Tc</td>
+                    <td class="transition-metal">Ru</td>
+                    <td class="transition-metal">Rh</td>
+                    <td class="transition-metal">Pd</td>
+                    <td class="transition-metal">Ag</td>
+                    <td class="transition-metal">Cd</td>
+                    <td class="poor-metal">In</td>
+                    <td class="poor-metal">Sn</td>
+                    <td class="metalloid">Sb</td>
+                    <td class="metalloid">Te</td>
+                    <td class="halogen">I</td>
+                    <td class="noble-gaz">Xe</td>
+                </tr>
+
+                <tr>
+                    <td class="alcalin">Cs</td>
+                    <td class="alcalino-terreux">Ba</td>
+                    <td class="lanthanids">57-71</td>
+                    <td class="transition-metal">Hf</td>
+                    <td class="transition-metal">Ta</td>
+                    <td class="transition-metal">W</td>
+                    <td class="transition-metal">Re</td>
+                    <td class="transition-metal">Os</td>
+                    <td class="transition-metal">Ir</td>
+                    <td class="transition-metal">Pt</td>
+                    <td class="transition-metal">Au</td>
+                    <td class="transition-metal">Hg</td>
+                    <td class="poor-metal">Ti</td>
+                    <td class="poor-metal">Pb</td>
+                    <td class="poor-metal">Bi</td>
+                    <td class="poor-metal">Po</td>
+                    <td class="metalloid">At</td>
+                    <td class="noble-gaz">Rn</td>
+                </tr>
+
+                <tr>
+                    <td class="alcalin">Fr</td>
+                    <td class="alcalino-terreux">Ra</td>
+                    <td class="actinids">89-103</td>
+                    <td class="transition-metal">Rf</td>
+                    <td class="transition-metal">Db</td>
+                    <td class="transition-metal">Sg</td>
+                    <td class="transition-metal">Bh</td>
+                    <td class="transition-metal">Hs</td>
+                    <td>Mt</td>
+                    <td>Ds</td>
+                    <td>Rg</td>
+                    <td class="transition-metal">Cn</td>
+                    <td>Nh</td>
+                    <td>Fi</td>
+                    <td>Mc</td>
+                    <td>Lv</td>
+                    <td>Ts</td>
+                    <td>Og</td>
+                </tr>
+
+                <tr>
+                    <td colspan=3 style="border:none"></td>
+                    <td class="lanthanids">La</td>
+                    <td class="lanthanids">Ce</td>
+                    <td class="lanthanids">Pr</td>
+                    <td class="lanthanids">Nd</td>
+                    <td class="lanthanids">Pm</td>
+                    <td class="lanthanids">Sm</td>
+                    <td class="lanthanids">Eu</td>
+                    <td class="lanthanids">Gd</td>
+                    <td class="lanthanids">Tb</td>
+                    <td class="lanthanids">Dy</td>
+                    <td class="lanthanids">Ho</td>
+                    <td class="lanthanids">Er</td>
+                    <td class="lanthanids">Tm</td>
+                    <td class="lanthanids">Yb</td>
+                    <td class="lanthanids">Lu</td>
+                </tr>
+
+                <tr>
+                        <td colspan=3 style="border:none"></td>
+                        <td class="actinids">Ac</td>
+                        <td class="actinids">Th</td>
+                        <td class="actinids">Pa</td>
+                        <td class="actinids">U</td>
+                        <td class="actinids">Np</td>
+                        <td class="actinids">Pu</td>
+                        <td class="actinids">Am</td>
+                        <td class="actinids">Cm</td>
+                        <td class="actinids">Bk</td>
+                        <td class="actinids">Cf</td>
+                        <td class="actinids">Es</td>
+                        <td class="actinids">Fm</td>
+                        <td class="actinids">Md</td>
+                        <td class="actinids">No</td>
+                        <td class="actinids">Lr</td>
+                    </tr>
+            </table>
+    </body>
+</html>
