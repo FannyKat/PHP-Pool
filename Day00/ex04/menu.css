@@ -1,0 +1,112 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(243, 198, 205);
+}
+
+nav > ul {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+}
+
+nav > ul > li {
+    display: inline-block;
+    position: relative;
+    padding: 20px 30px;
+    color: rgb(106, 93, 161);
+    font-weight: bold;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.submenu {
+    display: none;
+}
+
+.sandwich li {
+    border-radius: 5px;
+    border: 2px solid rgb(106, 93, 161);
+    box-shadow: 2px 2px 2px rgb(106, 93, 161);
+}
+
+.rolls li {
+    border-radius: 5px;
+    border: 2px solid rgb(167, 6, 167);
+    box-shadow: 2px 2px 2px rgb(167, 6, 167);
+}
+
+.deserts li {
+    border-radius: 5px;
+    border: 2px solid rgb(180, 59, 164);
+    box-shadow: 2px 2px 2px rgb(180, 59, 164);
+}
+
+.drinks li {
+    border-radius: 5px;
+    border: 2px solid rgb(202, 39, 126);
+    box-shadow: 2px 2px 2px rgb(202, 39, 126);
+}
+
+.submenu li:hover {
+    color: #EEE;
+    font-weight: bold;
+}
+
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 105%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sandwich:hover {
+    border: 2px solid rgb(75, 75, 228);
+    box-shadow: 2px 2px 2px rgb(75, 75, 228);
+    background-color: rgb(141, 141, 255);
+    cursor: pointer;
+}
+
+.rolls:hover {
+    border: 2px solid rgb(167, 6, 167);
+    box-shadow: 2px 2px 2px rgb(167, 6, 167);
+    background-color: rgb(177, 92, 177);
+    cursor: pointer;
+}
+
+.deserts:hover {
+    border: 2px solid rgb(180, 59, 164);
+    box-shadow: 2px 2px 2px rgb(180, 59, 164);
+    background-color: rgb(193, 122, 214);
+    cursor: pointer;
+}
+
+.drinks:hover {
+    border: 2px solid rgb(202, 39, 126);
+    box-shadow: 2px 2px 2px rgb(202, 39, 126);
+    background-color: rgb(233, 154, 203);
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    padding: 15px 30px 20px 30px;
+}
