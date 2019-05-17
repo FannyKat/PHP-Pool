@@ -1,0 +1,192 @@
+body {
+    background-color: #505050;
+    margin-right: 30px;
+}
+
+header {
+    background-color: #909090;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #000;
+
+}
+
+.dayofthe42 {
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.top {
+    padding-top: 10px;
+    height: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.reload {
+    float: right;
+    height: auto;
+    width: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.close {
+    height: 18px;
+    position: relative;
+    float: right;
+    left: 295px;
+    top: 125px;
+}
+
+.loup {
+    margin-top: 25px;
+    height: auto;
+    float: right;
+    position: relative;
+    margin-right: 20px;
+    right: -20px;
+}
+
+.aside 
+{
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: #909090;
+    height: 430px;
+    width: 130px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #000;
+    float: left;
+}
+
+.aside img {
+    width: 70px;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+
+.eye {
+    border-style: solid;
+    border-color: red;
+    border-width: 6px;
+    border-radius: 5px;
+}
+
+.aside-right {
+    left: 1200px;
+    top: -780px;
+    position: relative;
+    background-color: #909090;
+    height: 430px;
+    width: 130px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #000; 
+}
+
+.aside-right img {
+    width: 60px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.brick {
+    background-image: url('resources/brick.jpg');
+    width: 110px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.section {
+
+    margin-left: 50px;
+    background-color: #909090;
+    height: 550px;
+    width: 910px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #000;
+    margin-left: 253px;
+    margin-top: 20px;
+}
+
+.section img {
+    width: 895px;
+    height: 535px;
+    margin-left: 7px;
+    margin-top: 6px;
+}
+
+#ikea {
+    width: 7%;
+    height: 85px;
+    float: right;
+    margin-top: -25%;
+    margin-right: 60%;
+    position: relative;
+}
+
+#apple {
+    width:20%;
+    height: 150px;
+    float: right;
+    margin-top: -27%;
+    margin-right: 82%;
+    position: relative;
+}
+
+.quest {
+    margin-left: 50px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 15px;
+    background-color: #88ff89;
+    height: 140px;
+    width: 440px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #000;
+    margin-bottom: 90px;
+    font-size: 14px;
+    position: relative;
+    bottom: 60px;
+    left: -15px;
+    font-family: arial;
+    font-weight: 300;
+}
+
+.quest form {
+    height: 22px;
+}
+
+.quest form input[type="text"] {
+    margin-left: 2px;
+    width: 340px;
+    border: 2px solid #9d969d;
+    border-bottom-color: #eeeeee;
+    border-right-color: #eeeeee;
+    height: 12px;
+    margin-top: 2px;
+}
+
+.quest form input[type="submit"] {
+    border: 1px solid #a8a4a5;
+    border-radius: 1px;
+    background-color: #f4eff3;
+    margin-left: 4px;
+    height: 16px;
+    font-size: 11px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+}
+
+span.italic {
+    font-style: italic;
+}
+
+span.entrez {
+    font-family: 'Times';
+    font-size: 31px;
+}
+
+.quest span.ordi {
+    text-shadow: 4px 5px 2px #ff0000;
+}
