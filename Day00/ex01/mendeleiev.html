@@ -6,11 +6,11 @@
         border-radius: 18%;
         text-align: center;
         position: relative;
-        font-family: monospace;      
+        font-family: monospace;
     }
 
     body {
-        background-image: url("https://media.gettyimages.com/photos/molecular-structure-picture-id530573048?s=2048x2048");
+        background-image: url("https://www.aquitainechimiedurable.fr/wp-content/uploads/frontend/2016/09/chimie1_custom-1.jpg");
         background-attachment: fixed;
         background-size: cover;
         color: white;
@@ -21,36 +21,28 @@
         height: 100%;
     }
 
-    .title {
-        font-family: monospace;
-        font-style: bold;
-        text-align: center;
-        font-size: 40px;
-        color: white;
-    }
-
     .mass {
-        font-size: 10px;
         font-family: monospace;
         text-align: left;
+        margin: 0.5em;
     }
 
     .num {
-        
         text-align: right;
         font-family: monospace;
+        margin: 0.5em;
     }
 
     .alcalin {
-        background-color: rgb(226, 72, 72);
+        background-color: rgb(221, 139, 139);
     }
 
     .alcalino-terreux {
-        background-color: rgb(250, 207, 150);
+        background-color: rgb(248, 212, 166);
     }
 
     .transition-metal {
-        background-color: rgb(240, 80, 106);
+        background-color: rgb(238, 155, 169);
     }
 
     .metalloid {
@@ -62,7 +54,7 @@
     }
 
     .non-metal {
-        background-color: rgb(146, 235, 146);
+        background-color: rgb(176, 230, 176);
     }
 
     .halogen {
@@ -70,7 +62,7 @@
     }
 
     .noble-gaz {
-        background-color: rgb(145, 145, 236);
+        background-color: rgb(164, 164, 230);
     }
 
     .no-class {
@@ -78,11 +70,11 @@
     }
 
     .lanthanids {
-        background-color: rgb(220, 157, 236);
+        background-color: rgb(224, 167, 238);
     }
 
     .actinids {
-        background-color: rgb(233, 108, 191);
+        background-color: rgb(224, 136, 195);
     }
 
     #desintegration {
@@ -96,9 +88,7 @@
     }
 </style>
 <html>
-    <head><title>Mendeleiev</title>
-        <h1 class="title">Periodic Table of Elements</h1>
-    </head>
+    <head><title>Mendeleiev</title></head>
     <body>
             <table contenteditable="true">
                 <tr>
@@ -218,7 +208,7 @@
                     <td style="border:none"></td>
                 </tr>
                 <tr>
-                    <td colspan=3 style="border:none"><h2>Lanthanids -->></h2></td>
+                    <td colspan=3 style="border:none"></td>
                     <td class="lanthanids"><p class="num">57</p><h2>La</h2><p class="mass">138,90</p></td>
                     <td class="lanthanids"><p class="num">58</p><h2>Ce</h2><p class="mass">140,11</p></td>
                     <td class="lanthanids"><p class="num">59</p><h2>Pr</h2><p class="mass">140,90</p></td>
@@ -237,7 +227,7 @@
                 </tr>
 
                 <tr>
-                        <td colspan=3 style="border:none"><h2>Metalloids -->></h2></td>
+                        <td colspan=3 style="border:none"></td>
                         <td class="actinids" id="desintegration"><p class="num">89</p><h2>Ac</h2><p class="mass">227</p></td>
                         <td class="actinids" id="desintegration"><p class="num">90</p><h2>Th</h2><p class="mass">232,03</p></td>
                         <td class="actinids" id="desintegration"><p class="num">91</p><h2>Pa</h2><p class="mass">231,03</p></td>
@@ -252,7 +242,7 @@
                         <td class="actinids" id="synthe"><p class="num">100</p><h2>Fm</h2><p class="mass">257</p></td>
                         <td class="actinids" id="synthe"><p class="num">101</p><h2>Md</h2><p class="mass">258</p></td>
                         <td class="actinids" id="synthe"><p class="num">102</p><h2>No</h2><p class="mass">259</p></td>
-                        <td class="actinids" id="synthe"><p class="num">103</p><h2>Lr</h2><p class="mass">266</p>td>
+                        <td class="actinids" id="synthe"><p class="num">103</p><h2>Lr</h2><p class="mass">266</p>
                     </tr>
             </table>
     </body>

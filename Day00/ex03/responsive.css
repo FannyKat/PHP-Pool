@@ -11,7 +11,7 @@ h2, td, p{
 }
 
 body {
-    background-image: url("https://media.gettyimages.com/photos/molecular-structure-picture-id530573048?s=2048x2048");
+    background-image: url("https://www.aquitainechimiedurable.fr/wp-content/uploads/frontend/2016/09/chimie1_custom-1.jpg");
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -26,34 +26,35 @@ table {
 }
 
 .mass {
-    font-size: 1vw;
+    font-size: 0.8vw;
     text-align: left;
-    position: absolute;
-	margin: auto;
+    position: relative;
+    margin: 0.2em;
+    padding-top: 5px;
     bottom: 0;
 }
 
 .num {
-    font-size: 1vw;
+    font-size: 0.8vw;
     text-align: right;
-    margin: auto;
     position: relative;
+    margin: 0.2em;
 }
 
 .alcalin {
-    background-color: rgb(226, 72, 72);
+    background-color: rgb(223, 106, 106);
 }
 
 .alcalino-terreux {
-    background-color: rgb(250, 207, 150);
+    background-color: rgb(248, 213, 167);
 }
 
 .transition-metal {
-    background-color: rgb(240, 80, 106);
+    background-color: rgb(252, 158, 173);
 }
 
 .metalloid {
-    background-color: rgb(212, 212, 144);
+    background-color: rgb(209, 209, 147);
 }
 
 .poor-metal {
@@ -61,7 +62,7 @@ table {
 }
 
 .non-metal {
-    background-color: rgb(146, 235, 146);
+    background-color: rgb(180, 230, 180);
 }
 
 .halogen {
@@ -69,7 +70,7 @@ table {
 }
 
 .noble-gaz {
-    background-color: rgb(145, 145, 236);
+    background-color: rgb(160, 160, 226);
 }
 
 .no-class {
@@ -81,7 +82,7 @@ table {
 }
 
 .actinids {
-    background-color: rgb(233, 108, 191);
+    background-color: rgb(218, 136, 190);
 }
 
 #desintegration {
