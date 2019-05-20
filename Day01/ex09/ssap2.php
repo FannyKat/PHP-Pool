@@ -27,7 +27,7 @@
             else
                 $ascii[] = $elem;
         }
-        sort($num);
+        sort($num, SORT_STRING);
         natcasesort($alpha);
         sort($ascii);
         foreach($alpha as $elem)
