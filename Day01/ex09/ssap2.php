@@ -8,6 +8,23 @@
         sort($tab);
         return ($tab);
     }
+
+    function    issort($i, $j)
+    {
+        $a = strtolower($i);
+        $b = strtolower($j);
+        $ctype = "abcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+        for ($i = 0; $i < (strlen($a) || strlen($b)); $i++)
+        {
+            $case1 = strpos($ctype, $a[$i]);
+            $case2 = strpos($ctype, $b[$i]);
+            if ($case1 > $case2)
+                return (1);
+            else if ($case1 < $case2)
+                return (-1);
+        }
+    }
+
     if ($argc > 1)
     {
         $alpha = array();
@@ -18,23 +35,8 @@
             $tab = ft_split($str);
             $array = array_merge($array, $tab);
         }
-        foreach($array as $elem)
-        {
-            if (is_numeric($elem))
-                $num[] = $elem;
-            else if (ctype_alpha(substr($elem, 0, 1)))
-                $alpha[] = $elem;
-            else
-                $ascii[] = $elem;
-        }
-        sort($num, SORT_STRING);
-        natcasesort($alpha);
-        sort($ascii);
-        foreach($alpha as $elem)
-            echo "$elem\n";
-        foreach($num as $elem)
-            echo "$elem\n";
-        foreach($ascii as $elem)
-            echo "$elem\n";
+        usort($array, "issort");
+        foreach ($array as $arg)
+            echo $arg."\n";
     }
 ?>
