@@ -22,7 +22,7 @@
         {
             if (is_numeric($elem))
                 $num[] = $elem;
-            else if (ctype_alpha($elem))
+            else if (ctype_alpha(substr($elem, 0, 1)))
                 $alpha[] = $elem;
             else
                 $ascii[] = $elem;
