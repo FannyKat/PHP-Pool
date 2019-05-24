@@ -5,14 +5,34 @@
     $file = file($argv[1]);
     foreach ($file as $line)
     {
-        if (preg_match_all("/<[a|img][^>]*( title=)(\".*?\")/mi", $line, $title))
+        if (preg_match("/<a[^>]*>/isU", $line, $matches))
+            $balise = 1;
+        else if (preg_match("/<\/a>/isU", $line, $matches))
+            $balise = 0;
+        if ($balise == 1 && preg_match_all("/<[a-z]*[^>]*( title=)((\"|').*?(\"|'))/mi", $line, $title))
         {
             for ($i = 0; $i <= count($title[2]); $i++)
                 $line = str_replace($title[2][$i], strtoupper($title[2][$i]), $line);
         }
-        if (preg_match("/<a[^>]*>(<.*>)*(.*)(<.*>)*<\/a>/isU", $line, $matches))
-            $line = str_replace($matches[2], strtoupper($matches[2]), $line);
-        echo $line;
+        if (preg_match("/<a[^>]*>(.*)</isU", $line, $matches))
+        {
+            $line = str_replace($matches[1], strtoupper($matches[1]), $line);
+            if (preg_match("/<\/a>/", $line))
+                $balise = 0;
+            if (preg_match_all("/>(.+?)</is", $line, $matches))
+                for($i = 0; $i < count($matches[1]); $i++)
+                    $line = str_replace($matches[1][$i], strtoupper($matches[1][$i]), $line);
+        }
+        else if ($balise == 1)
+        {          
+            if (preg_match_all("/>(.+?)</is", $line, $matches))
+                for($i = 0; $i < count($matches[1]); $i++)
+                    $line = str_replace($matches[1][$i], strtoupper($matches[1][$i]), $line);
+            if (preg_match("/[^<]*/", $line, $matches))
+                $line = str_replace($matches[0], strtoupper($matches[0]), $line);
+        }
+        
+        echo $line."\n";
     }
     echo "\n";
 ?>
