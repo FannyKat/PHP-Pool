@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-    if ($argc < 2 || !file_exists($argv[1]))
+if($argc < 2 || !file_exists($argv[1]))
         exit();
     $file = file($argv[1]);
     foreach ($file as $line)
@@ -19,9 +19,6 @@
             $line = str_replace($matches[1], strtoupper($matches[1]), $line);
             if (preg_match("/<\/a>/", $line))
                 $balise = 0;
-            if (preg_match_all("/>(.+?)</is", $line, $matches))
-                for($i = 0; $i < count($matches[1]); $i++)
-                    $line = str_replace($matches[1][$i], strtoupper($matches[1][$i]), $line);
         }
         else if ($balise == 1)
         {          
