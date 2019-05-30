@@ -3,7 +3,7 @@
 		{
 			public function		resistsFire()
 			{
-					if($this->resistsFire)
+					if ($this->resistsFire)
 						return True;
 			}
 			public function		getBurned()
