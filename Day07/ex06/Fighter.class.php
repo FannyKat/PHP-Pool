@@ -12,12 +12,7 @@
 			public function fighterType()
 			{
 				return ($this->fighter);
-			}
-	
-			public function __clone()
-			{
-			
-			}
+			}	
 		}
 
 ?>
