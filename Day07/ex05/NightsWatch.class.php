@@ -10,8 +10,8 @@
 			}
 			public function fight()
 			{
-				foreach ($this->tab as $key => $value)
-					$value->fight();
+				foreach ($this->tab as $key)
+					$key->fight();
 			}
 		}
 ?>
