@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 100%;
+			position: center;
+			margin: 10% auto;
+        }
+    </style>
+    <body>
+        <div id="balloon" onclick="blow_balloon(this)" onmouseout="deflate_balloon(this)">
+                <script type="text/javascript">
+					var i = 0;
+					balloon.style.backgroundColor = "red";
+					
+					function 	blow_balloon(balloon)
+					{
+						xwidth = document.getElementById("balloon").offsetWidth;
+						xheight = document.getElementById("balloon").offsetHeight;
+						xcolor = balloon.style.backgroundColor;
+						
+						balloon.style.width = xwidth + 10 + "px";
+						balloon.style.height = xheight + 10 + "px";
+						/** Explode My Balloon **/
+						if (xwidth > 420)
+						{
+							balloon.style.width = 200 + "px";
+							balloon.style.height = 200 + "px";
+						}
+						/** Change color of My Balloon **/
+						if (xcolor === "red")
+ 							balloon.style.backgroundColor = "green";
+						else if (xcolor === "green")			
+ 							balloon.style.backgroundColor = "blue";
+						else if (xcolor === "blue")
+ 							balloon.style.backgroundColor = "red";
+					}
+
+					function	deflate_balloon(balloon)
+					{
+						xwidth = document.getElementById("balloon").offsetWidth;
+						xheight = document.getElementById("balloon").offsetHeight;
+						xcolor = balloon.style.backgroundColor;
+
+						/** Decrease Balloon Size **/
+						if (balloon.style.width >= 200 + "px")
+						{
+							balloon.style.width = xwidth - 5 + "px";
+							balloon.style.height = xheight - 5 + "px";
+
+							if (xcolor === "red")
+								balloon.style.backgroundColor = "blue";
+							else if (xcolor === "blue")
+								balloon.style.backgroundColor = "green";
+							else if (xcolor === "green")
+								balloon.style.backgroundColor = "red";
+						}	
+					}
+				</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<meta charset=utf-8>
+	<style>
+		#calc
+		{
+			text-align: center;
+			margin: 10% auto;
+		}
+		input
+		{
+			text-align: center;
+			width: 300px;
+			height: 50px;
+		}
+		select
+		{
+			text-align: center;
+			font-size: 20px;
+			width: 50px;
+			height: 70px;
+		}
+</style>
+	<body>
+		<div id="calc">
+				<input type="text" id= "num1" value="">
+					<select id="operator">
+						<option value="0">+</option>
+						<option value="1">-</option>
+						<option value="2">/</option>
+						<option value="3">*</option>
+						<option value="4">%</option>
+					</select>
+				<input type="text" id="num2" value="">
+				<button onclick="calcul();">Try me!</button>
+		<script type="text/javascript">
+				var intervalId = setInterval(function() { alert("Please use me...") }, 30000);
+				function 	calcul() 
+				{
+					clearInterval(intervalId);
+					var nbr1 = Number(document.getElementById("num1").value);
+					var nbr2 = Number(document.getElementById("num2").value);
+					var e = document.getElementById("operator");
+					var opIndex = e.options[e.selectedIndex].value;
+					if (nbr1 >= 0 && nbr2 >= 0 && ((opIndex != 2 || opIndex != 4 ) && nbr2 !== 0))
+					{
+						switch (opIndex) 
+						{
+							  case '0':
+								alert(nbr1 + nbr2);
+								console.log(nbr1 + nbr2);
+								break;
+							  case '1':
+								alert(nbr1 - nbr2);
+								console.log(nbr1 - nbr2);
+								break;
+							  case '2':
+								alert(nbr1 / nbr2);
+								console.log(nbr1 / br2);
+								break;
+							  case '3':
+								alert(nbr1 * nbr2);
+								console.log(nbr1 * nbr2);
+								break;
+							  case '4':
+								alert(nbr1 % nbr2);
+								console.log(nbr1 % nbr2);
+								break;
+							  default:
+								alert(nbr1 + nbr2);
+								console.log(nbr1 + nbr2);
+						}
+					}
+					else if ((opIndex == 2 || opIndex == 4 ) && nbr2 === 0)
+						alert("It’s over 9000!");
+					else
+						alert("Error :(");
+					intervalId = setInterval(function() { alert("Please use me...") }, 30000);
+				}
+		</script>
+		</div>
+	</body>
+</html>
